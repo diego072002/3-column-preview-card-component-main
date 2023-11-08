@@ -1,0 +1,140 @@
+:root{
+    /*colores primarios*/
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    /*colores neutro*/
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray : hsl(0, 0%, 95%);
+
+    --Lexend:'Lexend Deca', sans-serif;
+    --Big:'Big Shoulders Display', sans-serif;
+    --white: #ffff
+    
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+html{
+    font-family: var(--Lexend);
+    
+}
+
+.contenedorP{
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Transparent-white);
+    padding: 50px;
+}
+.contenedor{
+    padding: 0;
+    border-radius: 10px;
+    display: flex;
+    width: 950px;
+    height: auto;
+    background-color: var(--Dark-desaturated-blue);
+    
+   
+}
+.cont-1{
+    background-color: var(--Bright-orange);
+    border-radius: 10px 0 0 10px;
+    padding-bottom: 70px;
+    
+}
+.cont-2{
+    background-color: var(--Dark-cyan);
+    padding-bottom: 70px;
+}
+.cont-3{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 10px 10px 0;
+    padding-bottom: 70px;
+}
+h1{
+    font-family: var(--Big);
+    padding-left: 50px;
+    margin-top: 30px;
+    
+    color: var(--white);
+    font-size: 40px;
+}
+p{
+    
+    color: var(--Very-light-gray);
+    margin-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 90px;
+    font-size: 15px;
+    line-height: 1.8;
+    
+}
+a{
+    color: var(--white);
+    width: 150px;
+    height: 50px;
+    border-radius: 40px;
+    margin-left: 50px;
+    background-color: var(--white);
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 15px;
+    padding-bottom:15px ;
+
+    
+}
+.btn1{
+    color: var(--Bright-orange);
+}
+.btn2{
+    color: var(--Dark-cyan);
+}
+.btn3{
+    color: var(--Very-dark-cyan);
+}
+img{
+    padding-left:50px ;
+    padding-top: 50px;
+}
+
+@media(max-width:375px){
+    .contenedor{
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .cont-1{
+        border-radius: 10px 10px 0 0;
+    }
+    .cont-3{
+        border-radius: 0 0 10px 10px;
+    }
+    h1{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    p{
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 15px ;
+    }
+    a{
+        padding-left: 30px; 
+        margin-left: 30px;
+    }
+    
+
+
+
+
+}
